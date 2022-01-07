@@ -1,4 +1,4 @@
-source "http://rubygems.org"
+source 'https://ninjacard-api:APTdrZ9ygWFYqq89vWSt7V5U6rf9uCPXnL8Jx@ninjaholdings.jfrog.io/artifactory/api/gems/default-rubygems-virtual/'
 
 gemspec
 

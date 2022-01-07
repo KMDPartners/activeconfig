@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name = "activeconfig"
+  s.name = "nc_activeconfig"
   s.version = "1.0.0"
 
   s.files         = `git ls-files`.split("\n")
@@ -13,6 +13,13 @@ Gem::Specification.new do |s|
 
   s.executables = ["active_config"]
   s.require_paths = ["lib"]
+
+  if s.respond_to?(:metadata)
+    s.metadata['allowed_push_host'] = 'https://ninjaholdings.jfrog.io/artifactory/api/gems/default-rubygems-virtual'
+  else
+    raise 'RubyGems 2.0 or newer is required to protect against ' \
+          'public gem pushes.'
+  end
 
   s.add_dependency("rdoc")
   s.add_dependency("bundler")
